@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nortsur - Nuevo Pedido</title>
+</head>
+<body>
+  <h1>Nuevo Pedido</h1>
+
+  <label>
+    ID Cliente:
+    <input type="number" id="cliente_id" placeholder="Ej: 12">
+  </label>
+  <br><br>
+
+  <label>
+    Observaciones:
+    <input type="text" id="observaciones" placeholder="ej: Entregar mañana 9hs">
+  </label>
+
+  <h2>Items</h2>
+
+  <div>
+    <label>
+      Producto:
+      <select id="producto_select"></select>
+    </label>
+    <label>
+      Cantidad:
+      <input type="number" id="cantidad" value="1" min="1">
+    </label>
+    <button type="button" onclick="agregarItem()">Agregar</button>
+  </div>
+
+  <ul id="items_list"></ul>
+
+  <button type="button" onclick="enviarPedido()">Enviar Pedido</button>
+
+  <pre id="resultado"></pre>
+
+  <script>
+    let productos = [];
+    let items = [];
+
+    async function cargarProductos() {
+      const res = await fetch('/productos');
+      if (!res.ok) {
+        console.error('Error al cargar productos:', res.status, await res.text());
+        return;
+      }
+      productos = await res.json();
+
+      if (!Array.isArray(productos)) {
+        console.error('La respuesta de /productos no es una lista:', productos);
+        return;
+    }
+
+      const select = document.getElementById('producto_select');
+      productos.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p.id;
+        opt.textContent = `${p.codigo} - ${p.nombre}`;
+        select.appendChild(opt);
+    });
+  }
+
+    function agregarItem() {
+      const select = document.getElementById('producto_select');
+      const cantidadInput = document.getElementById('cantidad');
+      const productoId = parseInt(select.value, 10);
+      const cantidad = parseInt(cantidadInput.value, 10);
+
+      if (!productoId || cantidad <= 0) {
+        alert('Seleccioná un producto y cantidad válida');
+        return;
+      }
+
+      items.push({
+        producto_id: productoId,
+        cantidad: cantidad
+      });
+
+      const item = productos.find(p => p.id === productoId);
+      const li = document.createElement('li');
+      li.textContent = `x${cantidad} - ${item.codigo} ${item.nombre}`;
+      document.getElementById('items_list').appendChild(li);
+    }
+
+    async function enviarPedido() {
+      const clienteId = parseInt(document.getElementById('cliente_id').value, 10);
+      const observaciones = document.getElementById('observaciones').value;
+
+      if (!clienteId) {
+        alert('Ingresá un ID de cliente');
+        return;
+      }
+      if (items.length === 0) {
+        alert('Agregá al menos un ítem');
+        return;
+      }
+
+      const body = {
+        cliente_id: clienteId,
+        canal: "web",
+        observaciones: observaciones,
+        items: items
+      };
+
+      const res = await fetch('/pedidos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      const data = await res.json();
+      document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+    }
+
+    cargarProductos();
+  </script>
+</body>
+</html>

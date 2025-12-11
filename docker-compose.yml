@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  nortsur-backend:
+    build: .
+    container_name: nortsur-backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Usamos la misma URL que en database.py por defecto
+      DATABASE_URL: "sqlite:///./data/nortsur.db"
+    volumes:
+      - .:/app           # código en vivo (para que --reload funcione)
+      - nortsur_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  nortsur_data:

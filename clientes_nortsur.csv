@@ -1,0 +1,406 @@
+id,numero_cliente,nombre,direccion,barrio,telefono,vendedor,tiene_descuento,comentario_adicional,deuda,tipo_entrega,coordenadas_lat,coordenadas_lng
+1,1,Jole,"San martin 443, esq jean jaures",Campana,11 5573-2845,,,Bolson Doble x15 /Hot Dog parme x6,725400.0,,-34.16477297107763,-58.960675825306694
+2,2,"Alfredo, kiosko mis caprichos","Av de los constituyentes 3187,esq serratea, Barrio las tunas",Pacheco,11 3320-3652 / 1154659954,,,PIDE BANDEJAS DEL DOBLE EN PAQ. DE 3 (una bandeja seria 19 paq.3),215000.0,,-34.44754130827351,-58.67119235111336
+3,3,"Valeria, LO DE CARLITOS","San lorenzo 1706, esq panama",Martin Coronado,54 9 11 3270-1638,,,PORTA PANCHP DOBLEX100 / BOLSONES X15,109470.0,,-34.586609693189175,-58.58833120761012
+4,5,"Gustavo, kiosko","Bartolomé Mitre 3889,esq Tucuman","San Martin,",54 9 11 3933-3555,,5.5,Combo Simple/ Combo Doble,1621442.0,,-34.57757321001656,-58.53940229565574
+5,5,mapache,"Bartolo+C6:I6mé Mitre 3889,esq Tucuman","San Martin,",549 1138783759,,,Combo Simple/ Combo Doble,,,-34.57757321001656,-58.53940229565574
+6,6,"Milena, Local Kanai","Rivadavia 16,esq 25 de mayo",Cardales,11 3630-8681,,,Super Pancho x6,,,-34.33026910282421,-58.986549713078695
+7,7,Daniel,"tapia de la cruz 99, esq Av gral san martin",Escobar,11 3297-6722,,,Combo Parme /Lomo x2,,,-34.343545020690584,-58.79090493366813
+8,9,cristian,spadachini 921esq rivadavia,Escobar,3489 323115,,,Pancho Doble x3,,,-34.350578151027285,-58.79624043713882
+9,11,"Ana, Kiosko MEGA",av del trabajo 421,Don Torcuato,11-6118-3891,,,pide media bandeja/ 10 Pancho doble x3,,,-34.50224425124941,-58.6420256497356
+10,12,Cristian,Av. Dr. Honorio Pueyrredón 4222,Villa Rosa,11 3267-8567,,6.0,Combo Parme/Combo Doble,,,-34.419948296374734,-58.86812154628653
+11,12,Meli,Av. Dr. Honorio Pueyrredón 4222,Villa Rosa,11 3267-8567,,,El combo simpre son de 72 salchicas en paq. De 3 /,,,-34.419948296374734,-58.86812154628653
+12,14,Valeria Hamburgueseria AL TOQUE ROQUE,"Ruta Provincial 25, esq Bancalari.",Matheu,11-67115-4237,,7.0,siempre el combo de paq de 3 del doble,,,-34.38518316519075,-58.82776016805788
+13,17,"Sandra,  Kiosko de EASY","Av. de los Constituyentes 6020,",CABA,11 3007-1187,,,,438022.0,,-34.57263393257329,-58.50736891477374
+14,18,"Cofratelli, de 9 a 13y 15 a 18","Alberti 1004, esq Peron.",Campana,+54 9 3489 45-1515,,,Super Pancho x6,144320.0,,-34.17652423334709,-58.950129813580745
+15,21,"Jonas, Jolan restobar","Colón 493, esq edilfredo ameguino",Escobar,54 9 348 454-2186,,,Caja de Salchicha / combo doble x3,,,-34.34901630415902,-58.79439255271709
+16,22,"Marcelo & Veronica, kiosko la plaza",Tres Cruces 4775,Gregorio de Laferrere,+54 9 11 5955-5496,,5.0,Combo doble/Combo Simple,74190.0,,-34.73133226962827,-58.59170072766747
+17,24,"Sofia , Local Vitajugos","Puerto de Frutos, Buenos Aires Local 156",Tigre,11 2680-5827,,,,,,-34.418491564215415,-58.5720604017355
+18,25,Natalian buffet Club all boys de saavedra,"Besares 3142, saavedra caba",CABA,11 3109-2014,,,Combo Simple/Combo parme,,,-34.54778664782416,-58.47806935399186
+19,27,"Andrea, Club UVVA",cerrito 3771 Casa timbre 3,Villa Adelina,11 7065-9914,,,Combo Simple,,,-34.53081476558033,-58.54776974003451
+20,28,"Alan, kiosko Candy Shop",Dr. Gabriel Ardoino 20,Ramos Mejia,11 3030-8841,,,SIEMPRE QUIERO PAQ. SUELTOS DE DOBLE X3 Y PAQ SUELTOS DE PARMESANO,,,-34.63999885642765,-58.56355792623184
+21,28,"Alan, kiosko Candy Shop",Dr. Gabriel Ardoino 20,Ramos Mejia,155976-6724,,,SIEMPRE QUIERO PAQ. SUELTOS DE DOBLE X3 Y PAQ SUELTOS DE PARMESANO,,,-34.63999885642765,-58.56355792623184
+22,30,"Nicolas, Maxiquiosco","Ituzaingo 2710, esq moreno",Benavidez,11 3384-1459,,,Combo Simple,,,-34.4140939206119,-58.68893109536686
+23,37,"LEONARDO, maxikiosko","GUAMINI 1994 DE 10 A 23HS, esq Alberdi","Mataderos, CABA",11 6960-1509,,,Combo Doble,38000.0,,-34.65942403397329,-58.51368615916851
+24,38,"RODRIGO, Local multiple","18 DE JULIO 1938, esq Av Patricios","Garin, Escobar",11 3632-1865,,,Combo Doble,38000.0,,-34.43506831619713,-58.75285311534222
+25,39,"Maxi, local La Panchería","Av. Avellaneda 3795,esq azcuenaga",Virreyes,11-2850-8243,,,PASAR A COBRAR,121325.0,,-34.46102271285478,-58.57365492420385
+26,40,"Alejandro, kiosko",marcos sasatre 246,El Talar,11-3323-8876,,,Combo Parme,38000.0,,-34.484608818767434,-58.65593355238829
+27,41,"Emilio, Kioski 420",Travi 1147,Escobar,348 445-5470,,,Combo Simple,38000.0,,-34.35284131565386,-58.79669909977419
+28,42,"Zoe, Kiosko",Int. Alberto M. Campos 1901,San Martin,+54 9 11 3066-7815,,,,465200.0,,-34.57795755491265,-58.53577307932002
+29,43,"Silvana, local en ruta","Sin direccion, solo coordenadas",Rotonda de cardales,54 9 230 456-1486,,,,32000.0,,-34.341167988353604,-58.99526211582
+30,44,"Juan , Bar Koobas","Av. Corrientes 1632, Piso -2",Centro CABA,54 9 11 2396-3357,,,Papa x6  de hambur,,,-34.60441507991348,-58.38999722410437
+31,45,"Tomas, Local kiosko",alan talan 322 entre refasi y aguas mansas,Pacheco,116356-6282,,,Parme x4/Briochex4/Papa x4,,,-34.44652550489881,-58.653384249382626
+32,48,Julio,"goleta rio 1683, pilar centro",Pilar,11 - 34406271,,,Combo Simple,,,-34.4708599919637,-58.90583329655189
+33,49,"dani,  pizzeria",AV SALVADOR MARIA DEL CARRIL 2599,Urquiza CABA,3757452720,,,Combo Doble,224944.0,,-34.58840250613016,-58.49479541909848
+34,52,Soledad,Peron 2207,Caba,11 5037-4364,,,Combo Doble/Bolson Doble x15,,,-35.04904914972168,-58.09238149802368
+35,53,cristian,YPF ruta 2 km 61,bransend,11 5345-8923,,,Super Pancho x6 / Pancho Doble x3,45755.0,,-35.04904914972168,-58.09238149802368
+36,54,Kiosko campeones,madariaga 1797,lanus,empleada: 11 4093-7854  mama: 11 6812-5047  Dueño: 11 3296-7459,,,Quiere el combo del doble en paquetes de 3u SIEMPRE!!,,,-34.713010664995835,-58.3791547160114
+37,55,CHINO,Bartolome mitre 305,caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO DOBLE/COMBO SIMPLE,22700.0,,-34.60646630108825,-58.371030376288545
+38,55,CHINO,Patricios 801,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE,326500.0,,-34.63739943352438,-58.36988980628893
+39,55,CHINO,"""",None,None,None,,None,,None,,
+40,"Defensa 1711 parque lezama """,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE,,47500,,None,,
+41,56,"Mariela, Kioko la estrella",medrano 213,Caba,11 2468-0808,,5.0,COMBO DOBLE,,,-34.60824291268298,-58.42136162097855
+42,57,Kiosko market,Olleros 3903,Caba,11 6564-5939    EVER 2262 5150 87,,,,134710.0,,-34.58492554536949,-58.45252813607115
+43,58,"Jose, kiosko",Castelli 200,Caba,"11 2244-9944  HIJA:115923-,0006",,,Combo doble/Pancho Doblex3,834054.0,,-34.607676511989546,-58.4048746622604
+44,59,Tomy,Dellepiane 6500,Caba,tomy 11 6644-3645    Hermana Belen: 11 2303-6111,,,COMBO DOBLE,,,-34.63275791854708,-58.36209432873655
+45,62,Carla Casa particular,San Jose 948,Caba,11 6980-3817,,,COMBO DOBLE,153596.0,,-34.619079697363354,-58.385759175752746
+46,63,Kiosko,Villafañe 500,Caba,giselle 117065-6975 Julieta: 11 4974-8622 /,,,,1600.0,,-34.63275791854708,-58.36209432873655
+47,64,Juan,Peron 98,Florencio varela,11 2243-7060,,,hay que cambiar salchichas !! 4 Combo doble,,,-34.81055284027935,-58.27630551838098
+48,65,Ali,Dean Funes 1820,Caba,11 4055-8567,,,Combo Simple,,,-34.6318804736159,-58.40459071120128
+49,67,Mariano Grosso,Azcuenaga 952,Caba,11 6844-4393,,,,,,-34.59737395195218,-58.40057221808279
+50,68,Buffet colegio San juan bautista,Batalla de Maipú 149,Florencio varela,11 7364-6242,,,COMBO DOBLE/COMBO PARME,4000.0,,-34.80528401747116,-58.28088418130406
+51,71,Kiosko esquina,Maipu 96,Florencio varela,hija Malena: 11 3206-8989   Madre Ariel: 11 6158-1739,,,5 Combo Doble,,,,
+52,74,"Mario, kiosko",Peron 2405,Caba,11 6284-8972,,,Combo Doble,85200.0,,-34.60716363713669,-58.40085301808216
+53,75,"Jorge, kiosko",Entre rios 286,Caba,jorge :11 3941-1732   Empleada pierina: 11 5389-9336,,,COMBO DOBLE,,,-34.612216503192805,-58.39163380458882
+54,76,Kiosko,Peron 474,Florencio varela,11 6908-4183,,,3 Combo Doble,,,-34.84985328480079,-58.27842434713499
+55,77,"Fabian, pancheria",Baigorria 5347,Caba,11 6033-8395,,,Combo Doble en bolson// preguntar siempre lo de los panchos que pide confuso,99500.0,,-34.62042858176495,-58.51743657575263
+56,79,"Pablo, Kiosko",Sallares 46,Florencio varela,11 3681-9712,,,Combo doble,45200.0,,-34.80654049564344,-58.277113369875636
+57,80,"Marcos, escuela gastonomica",Sallares 285,Florencio varela,11 6569-8939,,,Combo Doble/ Pancho Doble x3,139300.0,,-34.8077962089042,-58.27327188923456
+58,81,"Andres, kiosko",Sallares 683,Florencio varela,+54 9 11 3579-4163,,,,129345.0,,-34.807159480822314,-58.26785726224863
+59,82,"Fabian, kiosko",España 3008,Florencio varela,11 3841-7026,,,3 combos doble,,,-34.806927834460346,-58.276216360399005
+60,84,Gabriela,Bucarest 685,Florencio varela,11 6534-7692,,,Combo Doble/Portapancho Doble (combo de 100),,,-34.82972287779402,-58.28166184690463
+61,85,"Jorge, Cafeteria",Directorio 1908,Caba,11 3229-0061,,,,,,-34.63158908194187,-58.45456913342331
+62,86,"Nadia, kiosko",Guardia vieja 4187,Caba,11 6945-5804,,,Combo Doble/Combo Simple,,,-34.599924578368125,-58.423440733651084
+63,87,"Vicky, kiosko",san martin 2671,Florencio varela,11 6497-3807,,5.0,8 Bolson Doble / 4 PBT,,,-34.7705883500405,-58.32098557412306
+64,88,"Laura, heladeria sei tu",Av. Juan Bautista Justo 8895,Caba,lau 11 6321-1591    edu: 11 5019-4494,,,Pancho doblex3/ Super panchox6/Paquete de salchicha,,,-34.633229312132585,-58.51339174691622
+65,91,"Marcelo,",Jorge Newbery 212,Luis guillon,11 6955-8631,,,,,,-34.80857657381631,-58.454507060398946
+66,92,"Gustavo, garage de las papas",Independencia 231,Alejandro korn,2224 468061,,7.0,Pancho doble x3/Super panchox6,,,-34.98062664166073,-58.37851398922426
+67,93,Patricia,Calle 38 A  numero 478 entre 7 y 8,Guernica,11 5490-0030,,,,,,-34.92166670640892,-58.37556884689917
+68,94,Kiosko almacen,Viamonte 1840,Caba,11 6904-0888,,,Combo simple/Pancho Doble/ PBT,,,-34.6008039608994,-58.39333793157552
+69,95,Debi,Moreno 888,Caba,11 6887-4628     11 6564-7379,,,Combo Doble/Combo Simple,,,-34.61160670196065,-58.37878121808184
+70,96,Mauro,camarones 4305,Caba,11 5812-2467,,,,1900.0,,-34.62233235215081,-58.49531711590433
+71,97,"Ivan, kiosko",Entre rios 2182,Caba,11 5871-1568,,,Combo Doble/Combo Simple/Combo Parme,,,-34.63368669797332,-58.39024195796959
+72,99,Pancheria MEMO,San Martin 2632,Florencio varela,1166173194  //,,,4Bolson doble x15 unidades,187290.0,,-34.80319169476486,-58.27813357119016
+73,100,Santiago,Mitre 4699,Sarandi,11 5812-4016,,,Combo doblepack de 3 /Combo Simple /Pancho doblex3,,,-34.69293343517958,-58.332558818343465
+74,102,Analia,Islas Orcadas 1571,Florencio varela,11 6361-5851,,,,,,-34.788863811944964,-58.272525600344
+75,103,"li, kiosko",Av. S. Martín 1230,Caba,11 3935-6550,,,Papa Pai / Combo simple/ Queso Parmesano/ Queso Cheddar,,,-34.6075982839895,-58.447166900305014
+76,104,"Alejandro, heladeria sei tu",Juramento 1400,Caba,11 3772-0940,,,,,,-34.55623596513005,-58.446613104592096
+77,105,"Diego,  almacen los gigantes",Acoyte 484,Caba,11 5981-9251,,,Pancho doblex3/ Super Panchox6/ Paquete de salchicha,,,-34.613220002524784,-58.43837265654753
+78,106,Alejandro,Colon S/N,"Bandera, santiago del estero",3857 413258,,,"se despacha en la dirección transporte santa marta del norte. Con re-despacho por transporte valle, la dirección del transporte: Ventana 3772, Caba",,,-34.81700883434593,-58.274293218380784
+79,107,Sandra de oliviera,Buenos aires 67,"San francisco, Cordoba",3564-687557,,,"Se despacha por transporte Brio, la dirección del transporte: Av san pedrito 3731, caba",85700.0,,,
+80,108,Sergio,San Martin 370,Gral Villegas,3388 524055,,,"Se despacha por transporte Espreso sissa que la dirección es: San pedrito 3570, caba",29400.0,,,
+81,110,Naty,"Einstein 4356, entre brasil y bolivia",Quilmes,11 5657-9511,,,-ombo Doble(15+3+2pa.Sal),63180.0,,-34.75676538416059,-58.26338155969917
+82,111,Alejandro,Cordoba 4863,Caba,"11 3626-1235,",,,-ombo Doble(15+3+2pa.Sal),2100.0,,-34.592195187520616,-58.43281448924741
+83,113,Nico,Alsina 894,Caba,11 3389-0777,,,-ombo Doble(15+3+2pa.Sal),53925.0,,-34.61058299035156,-58.37900737575326
+84,114,kiosko las chicas,Triunvirato 5794,caba,11 26946864,,,aombo Doble(15+3+2pa.Sal),,,-34.61058299035156,-58.37900737575326
+85,115,Cocomaritimo,149 A N3481,Berazategui,11-5911-1778,,,Combo Doble(15+3+2pa.Sal),209570.0,,-34.77861831776293,-58.19302367420485
+86,116,Florencia,Av. Bosques 1830,Bosques,11 2881-1058,,,se le debe una papa pai,67355.0,,-34.81372665582735,-58.23352131896689
+87,117,Romina,Calle 564 número 946 entre Entre 517 y 521,Florencio varela,11 2618-5281,,,-ombo Doble(15+3+2pa.Sal),299084.0,,-34.820121220210915,-58.29618805648888
+88,118,julio,rojas 400,caba,11 5820 6091,,,-ombo Doble(15+3+2pa.Sal),78912.0,,-34.6163879518205,-58.44325021120619
+89,119,Emma,luis maria drago 1177,Burzaco,11 3637-0290,,,-ombo Doble(15+3+2pa.Sal),78185.0,,-34.83188316792337,-58.42091758923311
+90,120,"laura, kiosko","vilela 3710, esq melian",CABA,11 50951769,,,-ombo Doble(15+3+2pa.Sal),152698.0,,-34.55127952598666,-58.48303741993516
+91,121,local,"juan domingo peron  1715, entre bulnes y adolfo grinstein",Florencio varela,11 5709-4379,,,,,,-34.80978898558349,-58.25684964599251
+92,122,sasha rios,"Florida 1680, esquina Kenny",Ezpeleta,11 3658 0883,,,-ombo Doble(15+3+2pa.Sal),436875.0,,-34.76061322209129,-58.24763763678085
+93,124,VENDEDOR ANTONIO,,,,Vendedor Antonio (5%),,,,,,
+94,125,xoana,"Polonia 1444, entre segui y silva",llavallol,11 3023-8215,,,-ombo Doble(15+3+2pa.Sal),,,-34.8126067728723,-58.42246469108392
+95,126,heladeria guadalupe,Donato alvarez 1010,CABA,11 3430-9008,,,-ombo Doble(15+3+2pa.Sal),,,-34.614515615995096,-58.45926334876702
+96,127,REVISAR NOMBRE,piedra buena 4030,CABA,11 4449-6625,,,,,,-34.678659945954294,-58.48645770304371
+97,129,Pizzeria la autentica,Monseñor De Las Casas 1296,Villa Vatteone,11 2854-1696,,,-ombo Doble(15+3+2pa.Sal),,,-34.83385061888079,-58.27525463252806
+98,130,gladys,coordinar entrega llamandola Av. Cruz & corvalan,CABA,11 7219-4901,,,-ombo Doble(15+3+2pa.Sal),900.0,,-34.6753741565688,-58.46181934691374
+99,131,agus,c521 n 3132,Gdor. Costa,11 63561720,,,-ombo Doble(15+3+2pa.Sal),,,-34.820075050728974,-58.297551511183045
+100,133,boombap,paez 2914,caba,11 6597-5049,,,-ombo Doble(15+3+2pa.Sal),,,-34.62234165486562,-58.473833373996044
+101,133,Silvana,Alvarez Jonte 3864,Caba,11 725-9566,,,,,,-34.61410081767993,-58.49506656063591
+102,134,matias,morelos 405 esq av avellaneda,caba,11 2638-4846,,,-ombo Doble(15+3+2pa.Sal),,,-34.620661200339335,-58.455018479288064
+103,135,"mariela, cafeteria dulceeleonor","calle 7 n°263, esq 101",berazategui,11 6012-5973,,,,,,-34.77976405457628,-58.261024031875756
+104,136,silvana,Beata claudina thevenet 1057,florencio varela,11 6641-9284,,,-ombo Doble(15+3+2pa.Sal),138640.0,,-34.799192682938795,-58.26181829114506
+105,137,cristina,Alfredo Palacios 4445 entre lucero y luzuriaga,valentin alsina,11 5306-9014,,,COMBO DOBLE,,,-34.66221925778357,-58.41933461645543
+106,138,"LEONARDO, maxikiosko",juan b justo 4583 esq namuncura,quilmes,11 6734-1029,,,COMBO PARME,140000.0,,-34.76390117218991,-58.270996747137985
+107,139,celeste moreyna,calle 124 2234 entre 22 y 23,berazategui,11 6871-8326,,,COMBO DOBLE,,,-34.7831595905758,-58.22830681645123
+108,140,Paola,clorinda 190 entre bombero galarza,Florencio Varela,11 5005-5602,,,COMBO DOBLE,,,-34.77468791824282,-58.278151474122986
+109,141,Guadalupe,Encuentro : araujo & fernandez de la cruz,lugano,11 5123-4203,,,COMBO DOBLE/COMBO SIMPLE,44875.0,,-34.67275174405011,-58.46159908146567
+110,142,sergio,viamonte 724 ( panaderia ),Caba,11 4434-1865,,,,,,-34.59986044694692,-58.377023958785955
+111,143,luciano,San pedro 6637,"Mataderos, CABA",11 2594-1325,,,,,,-34.663904163305745,-58.499495713705414
+112,144,ludmila,Entrerios a despachar,DESPACHAR,3437 54-5693,,,PANCHO DOBLE X3/ PARME X6 / HOG DOT PARME X6,,,,
+113,145,charly,juan bautista alberti 5080,"Mataderos, CABA",11 4916-4808,,,,59700.0,,-34.64611879810232,-58.496521689470605
+114,148,cafeteria saiko café,av eva peron 3624,florencio varela,11 3265-2744,,,,600.0,,-34.81306386726157,-58.277435118300325
+115,147,lautaro,Panamá 2799,Ezpeleta Oeste,11 2848-3756,,,,,,,
+116,149,anita,Santander 4936,CABA,11 2866-5042,,,,,,-34.66496144737479,-58.476586884710336
+117,151,geronimo,Agüero 1915,recoleta,2316 40-0407,,,Parme x4 / Combo Parme,,,-34.589273632728585,-58.40409298947251
+118,152,Silvana,"rotonda cardales,, pedir ubicación",Cardales,2304 56-1486,,,,,,,
+119,153,marcelo  Banchetto,Salcedo 3402,Parque patricios,11 2654-9568,,,COMBO SIMPLE,,,,
+120,154,susana,gorriti 1056,cruce de varela,11 6033-3166,,,COMBO DOBLE,,,-34.781858558597655,-58.27255971812027
+121,155,andrea,Calle 105 n 2003 esquina Juan Diaz de Solis.,florencio varela,11 3655-0191,,,,,,,
+122,156,Maxi VDP,"Av. Pres. Juan Domingo Perón 1009,",Villa de mayo,+54 9 351 204-0187,,,Bolson Super Pancho x24 / Bolson Doble x15,,,,
+123,157,local,catulo castillo  2699,parque patricios,11 5462-2460,,,El combo del doble pack de 3 siempre,,,-34.632883789414564,-58.4014928029637
+124,158,pollo broaster,"Baradero & zarate, llamar",Sarandi,11 6272-1405,,,,,,,
+125,160,Bren Vildoza,Jose Hernandez 3191,Tortuguitas,115152-4520,,,Combo Simple/Combo Doble,89835.0,,-34.48159795202126,-58.752511846006854
+126,161,Karen,Arenales 1509,Olivos,117367-2147,,,Combo Doble /Cmbo Simple,,,,
+127,162,celina,grecias 419,Florencio varela,11 5881-4211,,,,,,,
+128,163,Ivan,Ramallo 759,Sarandi,115576-6100,,,,,,-34.68097654547738,-58.33222687105009
+129,164,papa box,avellaneda 3835,caba,11 5332-9793,,,,,,,
+130,165,la panche,Cesar dias 635,escobar,54 9 348 4220-6276,,,,,,-34.34514509911523,-58.79686463180948
+131,167,cinthia,Av. padre obispo novak 1130,varela,113823-8116,,5.0,,,,-34.80886472856019,-58.294458190171476
+132,168,gonza fullser,Av las heras 3896,Palermo,11 3396-6284,,,El combo en paquete de 3,,,-34.58171777516086,-58.41408993180121
+133,169,Ricardo Rojas,Albert Einstein 1702,Bosques,115795-5433,,,,,,,
+134,170,Cristian romero,Mendoza 1029 entre Mistral y Islas orcadas,Florencio Varela,115475-3483,,,,,,,
+135,171,yanina,Jose gervacio artigas 5502 kiosco el ritual,villa puyrredon,114093-8306,,,,,,-34.57684126427923,-58.50365398762255
+136,172,Sotelo Rocio Belen,SEND BOX 12 de octubre 686  Granadero baigorria,Rosario,+54 9 341 260-2920,,,,,,,
+137,173,Martina Ale,bilinghurst 2277,Recoleta,549227702,,,,,,-34.58561261665792,-58.40597671830865
+138,174,Ernesto Acuña,Olazabal 5314,villa Urquiza,113452-0781,,,,,,-34.57776009382994,-58.48806078984117
+139,175,Tamara,Av.Salvador del carril 2599,Villa Puerredon,114405-9132,,,,,,-34.58781238017414,-58.49470396399796
+140,176,kiosco almacen,Av juan b justo 8891,"versalles, caba",+54 9 11 3580-2198,,,,,,-34.633213551452464,-58.51342851645626
+141,177,Particular,rellenar,rellanar,,,,,,,,
+142,178,Daiana Liubicich,"Estrada N1396,esquina independencia",Escobar,549348454-1736,,,,,,-34.35189310621525,-58.80170127413772
+143,180,Alibaba,Rivadavia 6889,Flores,116530-1267,,,,,,-34.628396893522506,-58.46253095313285
+144,181,Santiago Abaunz,Retira por casa santi,,11 3890-8120,,7.0,,,,,
+145,182,sandoval mayra,calle 29 num 1385,Berazategui,113571-5175,,,,134710.0,,-34.7939647288754,-58.232992060629655
+146,183,Andreina Huiza,José Pedro Varela 4866,"Villa devoto, caba",5832-9740,,,,,,-34.611196020636726,-58.51759468947174
+147,184,Maira Godoy,Zuviria 6971,villa lugano caba,114448-4229,,,,,,-34.67686184154866,-58.49583148946962
+148,185,Gabriel,calle 24 y 133,Berazategui,116799-5440,,,,,,-34.779733869677706,-58.21713066063009
+149,186,Mailen Burgos,Av.Eva Duarte de Peron 1508,Guernica,114026-1150,,,,,,-34.91871885467381,-58.38652824271757
+150,187,vanina,Alem 2860,monte grande,112711-9928,,,,,,-34.840102387667635,-58.44992901644907
+151,188,Aylen,Bibiloni 2471 entre fagnano y Sarmiento,Talar Ricardo Rojas,116595-8401,,,,,,-34.46266166402862,-58.681174416462405
+152,189,xoana,Si gorriti 1056 entre cabral y las americas,varela,115768-6673,,,,,,-34.78196350245936,-58.27251717750759
+153,190,Maria Luz,Ramón Falcón 5179,Villa Luro,116166-2740,,,,,,-34.63853889335754,-58.50040157412783
+154,191,Cinthia,CABRERA 3636,Palermo,113022-4630,,,,,,-34.59633044398406,-58.41771865682779
+155,193,"Alfredo, abre a las 12. llamar por telefono.",Puerto de Palos 799 esquina Araos de Lamadrid (esquina),Caba /La Boca,1161186910,,,,,,,
+156,194,Sol LLAMAR X TELEFONO,av Fernández de cruz 3685 y,Soldati,114055-0495,,,,,,-34.66393530329635,-58.449424055102796
+157,197,Camila,Ituzaingo 2710,Benavidez,1167382820,,,,,,,
+158,195,Rodrigo,29 de septiembre 1992,Lanus Oeste,113878-2615,,,,,,-34.70728369626121,-58.390957402961085
+159,198,Nazarena,avenida cordoba 5935,Palermo,113256-2864,,,,,,-34.58471738209134,-58.44381542843675
+160,199,Jorge,Belgrano 1902,Caba Horario:10a15hs /17a 20hs,116301-5693,,,,,,-34.528474356675275,-58.52040424017598
+161,200,Elena,Av Belgrano 2633,Balvanera,11 3175-7005,,,,,,-34.614257156518946,-58.40340166458337
+162,201,Cristian,Blanco Encalada 5029,Urquiza CABA,113520-7928,,,,,,-34.57499157340342,-58.485966709642256
+163,202,Matias,Sucre 2631 Belgrano,caba,,,,,,,,
+164,203,NYKS,Av Juan manuel brigadier de rosas 2956,Jose leon suarez,11-3689-0296,,,Combo Simple son 72 salc y 72 panes,,,-34.53527756511195,-58.577076160425044
+165,204,NYKS,Velez sarfield 4315,Munro,11-3689-0296,,,Combo Simple son 72 salc y 72 panes,,,-34.528474356675275,-58.52040424017598
+166,205,NYKS,Lavalle 2701,Villa ballester,11-3689-0296,,,Combo Simple son 72 salc y 72 panes,,,-34.5485571348503,-58.55551163065298
+167,206,NYKS,Av San Martin 1986,Caseros,11-3689-0296,,,Combo Simple son 72 salc y 72 panes,,,-34.60003925137402,-58.56153368438242
+168,207,NYKS,3 de febrero 2501,Caseros,11-3689-0296,,,Combo Simple son 72 salc y 72 panes,,,-34.604985498287526,-58.5639165923565
+169,208,"Mariela, Kioko la estrella",Medrano 140,Caba,11 2468-0808,,5.0,Combo doble/Combo simple,,,-34.60933268315782,-58.42148137148826
+170,209,"Mariela, Kioko la estrella",Av san juan 1854,Caba,11 2468-0808,,5.0,Se debe 2 golf   -Combo doble,,,-34.62291207607888,-58.39236237191429
+171,210,"Mariela, Kioko la estrella",av la plata 1085,Caba,11 2468-0808,,5.0,Combo doble/Combo simple,,,-34.6364361425872,-58.424259031071315
+172,211,Kiosco UVA,Vergara 3100,Florencio varela,Frank 11 2387-8597,,,Combo doble(15+3 + 2pa.sal),,,-34.7884392079161,-58.21828764243215
+173,212,Kiosco UVA,hipolito yrigoyen 1886,Florencio varela,11 2256-5145    11 3143-5531,,,Combos dobles,,,-34.78270061134888,-58.26642907889001
+174,213,Kiosco UVA,Aristobulo 98,Florencio varela,11 3197-2932   11 4888-5001,,,Combo doble(15+3 + 2pa.sal),144320.0,,-34.80581753446464,-58.27656296510288
+175,214,Kiosco UVA,Lujan 1453,Bosques,Micaela: 11 6875-4076   11 5157-9683,,,Combo doble(15+3 + 2pa.sal),,,-34.82673029220247,-58.22602936848192
+176,215,Kiosco UVA,senzabello 974,Florencio varela,11 4076-0906   Carla: 11 4189-9519,,,Combo doble(15+3 + 2pa.sal),,,-34.79298916768404,-58.268196969182775
+177,216,Kiosco UVA,Camino Gral Belgrano 6413,Florencio varela,local : 11 2397-3049,,,Combo Doble(15+3 + 2pa.sal),2100.0,,-34.78024655847697,-58.263787659521995
+178,217,Kiosco UVA,Av. San martin 3125,Florencio varela,116586-4238,,,Combo Doble(15+3 + 2pa.sal),,,-34.77875541821677,-58.27168544550193
+179,218,tomas,Bulnes 1669 entre Soler y paraguay,Caba,tomas: 2302582855,,,COMBO DOBLE/COMBO SIMPLE,,,-34.59202810545175,-58.41529560296525
+180,219,tomas,Scalabrini Ortiz 1441,Caba,tomas: 2302582855,,,Combo simple(3paq.+ 1 paq.sal) Pancho doblex3 / Super pancho x6,,,-34.59205754081158,-58.426311246918736
+181,220,Maxi Go24,Cordoba 5971,Caba,Gimena 11 6370-5644,,,COMBO SIMPLE /COMBO DOBLE,,,-34.58469337607024,-58.44417672798764
+182,221,Maxi Go24,Alvarez thomas 535,Caba,Gimena 11 6370-5644,,,Combo Simple,,,-34.580485206028705,-58.45026504691942
+183,222,"Maxi , kiosko",Camino gral Belgrano 2651,Berazategui,11 6176-0196,,,3 combos doble,,,,
+184,223,"Maxi , kiosko",Camino gral Belgrano 2651,Berazategui,114409-6805  LOCAL,,,3 combos doble,,,-34.79413359278946,-58.23820444713682
+185,224,"Wendi, kiosko",Gascon 590,Caba,11 2761-3275,,,Combo Doble/Combo simple,,,-34.60448387199068,-58.42457836226055
+186,225,"Wendi, kiosko",Scalabrini Ortiz 1802,Caba,11 2761-3275,,,Combo Doble/Combo simple,45200.0,,-34.60448387199068,-58.42457836226055
+187,226,"Mark, kiosko Maximos",Cordoba 5000,Caba,2901 585879,,5.0,Combo Doble en paquete de 3 / Combo Simple,78185.0,,-34.5912424997955,-58.43464031808312
+188,227,"Mark, kiosko Maximos",Av cabildo 562,Caba,2901 585879,,5.0,Combo Doble en paquete de 3 / Combo Simple,,,-34.5710954262625,-58.44276081808428
+189,228,"Mark, kiosko Maximos",Paraguay 2508,Caba,2901 585879,,5.0,se debe 3 salsa golf  Combo Doble en paquete de 3 / Combo Simple,,,-34.597596446753904,-58.40372003342529
+190,229,"Mark, kiosko Maximos",Sarmiento 1899,Caba,2901 585879,,5.0,Combo Doble en paquete de 3 / Combo Simple,,,-34.60549838170122,-58.39360057575357
+191,230,"Mark, kiosko Maximos",Av. pueryredon 832,Caba,2901 585879,,5.0,Combo Doble en paquete de 3 / Combo Simple,,,-34.60040863551812,-58.4046091469182
+192,231,"Mark, kiosko Maximos",Entre rios 504,Caba,2901 585879,,5.0,Combo Doble en paquete de 3 / Combo Simple,,,-34.614891286374956,-58.39149932654947
+193,232,Silvana,Peru 742,Caba,11 725-9566,,,-ombo Doble(15+3+2pa.Sal),,,-34.61652252526478,-58.37438327760246
+194,234,CHINO,Monteagudo y caseros,CABA,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO DOBLE/COMBO SIMPLE,139300.0,,,
+195,235,CHINO,vieytes 1301,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO DOBLE/COMBO SIMPLE,,,-34.64800611154147,-58.37765962607339
+196,236,CHINO,Alberti 195,CABA,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,Combo Simple,,,-34.611990812773406,-58.40165271808184
+197,237,CHINO,Chacabuco 561,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE,,,-34.61444086717187,-58.37612717575305
+198,238,CHINO,Chile 655,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE/COMBO DOBLE,85700.0,,-34.61593039945021,-58.37531323342428
+199,239,CHINO,Pinzon 526 / 192 despues de las 15hs,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE,38000.0,,-34.63435055842797,-58.361683718080556
+200,240,CHINO,Beazley 3722,Caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE,,,-34.65369949851014,-58.41201323342204
+201,241,CHINO,Pedriel 543,caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE/COMBO DOBLE,,,-34.47740268697486,-58.48650260111864
+202,242,ARACELI,Dean funes 1313,Caba,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,PANVHO DOBLE X3,,,,
+203,243,ARACELI,jujuy 524,Caba,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,,,,,
+204,244,ARACELI,"""Av. Saenz 708",None,None,None,,None,,None,,
+205,"""",Pompeya,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,,,,,None,,
+206,245,ARACELI,MITRE 459,Avellaneda,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,,,,-34.660042074561375,-58.36840097597745
+207,246,ARACELI,J M Blanes 104 - blanes y deboto,catalinas,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,PANVHO DOBLE X3,,,,
+208,247,ARACELI,Av. Entre Ríos 1212,Caba,Vendedora Araceli  : 11 2709-1939,Vendedora (5%),,,,,-34.622789780313255,-58.39125837412832
+209,248,Nacho,Castellana 250,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo doble/Combo smple,,,-34.816740750200026,-58.28318678769697
+210,249,Nacho,Peron 54,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo Doble(15+3+2pa.Sal),,,-34.81041804341037,-58.27690485582267
+211,250,Nacho,Belgrano 4042,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo Doble,,,-34.763730640784125,-58.29078865886343
+212,251,Nacho,San Martin 2756,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo Doble,,,-34.8040827156802,-58.27788445886197
+213,252,Nacho,Mitre 262,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo Doble,,,-34.8087448103586,-58.27369421534186
+214,253,Nacho,Montevideo 2314,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,Combo Doble,,,-34.81939840179455,-58.2728340045765
+215,254,Nacho,int. Antonio bengochea 460,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,-ombo Doble(15+3+2pa.Sal),,,-34.812253525697216,-58.28277404690563
+216,255,Nacho,fonrouge 3583,Florencio varela,Vendedor Nacho: 11 6452-4136,Vendedor Nacho (5%),,combo doble paq. De 3,,,-34.812401308708544,-58.27239027412161
+217,256,VENDEDOR ANTONIO,Pasaje bolaños 4838,Monte chingolo,11 3005-0889,Vendedor Antonio (5%),,,,,-34.72606643357174,-58.3427296471392
+218,257,VENDEDOR ANTONIO,Los patos 2578,CABA/ parque patricios,11 3190-7119,Vendedor Antonio (5%),,,,,-34.63933405801191,-58.39706895878473
+219,258,VENDEDOR ANTONIO,Fray Luis Beltran 2615,jose leon suarez,,Vendedor Antonio (5%),,,,,-34.52621883406348,-58.580555460639125
+220,259,victor,Charlone 706 PB A,caba,112391-2062,Vendedora Jessica(5%),,,,,-34.58185834307059,-58.45371128947281
+221,260,Yesica Parra,Av. RIVADAVIA 5951,caballito,112186-6539,,,,,,,
+222,261,Maria,Arias 2915,Saveedra,112834-0985,,,,,,-34.54365651574357,-58.47836630296683
+223,262,Rocio Mendoza,San Alejo,Pilar,113126-0065,,,,,,,
+224,263,richard,camarones 3488,villa del parque,11 6555-2374,,,,,,-34.61612727289288,-58.48764732329428
+225,264,Susana,España 3114   Entre sallares y mitre,florencio varela,115767-8479,,,,,,,
+226,265,Estela Rodriguez,avenida Bosques y Touring club en el instituto privado Ayelen,florencio varela,115802-9977,,,,,,,
+227,266,Paola,17 de noviembre 341 entre Patricias mendocinas y Lamadrid,escobar,113941-4638,Vendedora Jessica(5%),,,,,,
+228,267,stella maris,Av luro 6957,laferrere,1132851345,,,,,,,
+229,268,daniela,Calle 307 bis n4034,quilmes,11 2280-6694,,,,,,,
+230,269,zahira,Manuel Massa 8345,del viso,11 2600-8392,,,,,,,
+231,270,Melany,Salvador soreda 4783,villa dominico,112385-2397,,,,,,-34.68886838004763,-58.326081102961744
+232,271,Joel Villareal,agustin alvarez 4062,villa martelli,116276-4789,,,,,,-34.547399566867576,-58.50847593180241
+233,272,Romina,Avenida hipólito yrigoyen 439 entre san lorenzo y el plumerillo,,115692-6931,,,,,,-34.788575193286505,-58.27716897482932
+234,273,Aldana,Cariboni 963 entre padre goñi y el clavel,Florencio varela,,,,seguimiento,,,-34.840896849848384,-58.27672156084302
+235,274,Kiosco UVA,"Lisandro de la torre 1564, entre 15 y 15A",Berazategui,11 6586-4282,,,,,,-34.76358566503086,-58.208606760630715
+236,275,geogina,la rotonda 1155 e/ Girondo y Luis maria Drago,ing.allan,11 6527-2792,,,seguimiento,,,-34.83723034122091,-58.20507881644921
+237,280,tmb,Pichincha 1896 a partir de 11am,caba,115383-9257,Vendedor chino (5%),,,,,-34.63130637079785,-58.39602695387081
+238,281,Katherine,luna 727,caba parque patricios,115383-9257,Vendedor chino (5%),,,,,-34.644840936621804,-58.397303131617534
+239,282,silvana,"""Juan de zamora 3825",None,None,None,,None,,None,,
+240,"entre 1de mayo y don oriones """,Lanus Oeste,112741-0470,Vendedora Jessica(5%),,,,,,None,,
+241,283,marcelo,Guamini 5045 o dsp 15hs: soldado de la frontera 5012 3d,Lugano,11 38694576,,,,,,-34.68882102924087,-58.475529489382446
+242,284,Abigail (Local Mini Diosa),concordia 744 entre Felipe vayese y avenida gaona,caba,115063-3976,,,,,,-34.62433701462224,-58.47936943171339
+243,285,Felix / o Rodrigo,Avenida eva peron 4350 es una estacion de servicios axion,Parque Avellaneda,114997-8594,,,,,,,
+244,286,Andrea,Av.Cramer 1794,Caba,113758-3974,,,,,,-34.5676744132468,-58.45891484705863
+245,287,Andrea,Monroe 3554,Caba,113758-3974,,,,,,-34.56516610818458,-58.470774489387324
+246,288,El Paisa,Obon 2150  de 06:30 a 14:30  y de 17 a 00.00,Lanus,112758-5916,,,,,,-34.673011019036295,-58.427356206276414
+247,289,Ezequiel,carhue 3194,"Mataderos, CABA",115868-1341,,,,,,-34.670959132322565,-58.497536445395774
+248,290,Micaela Morales,"Espinosa 2456,  3A",Paternal Caba,113097-7927,,,,,,-34.601177643317335,-58.466289645398255
+249,291,Daniel,Antartida Argentina 401  Turdera,Lomas de Zamora,115040-1731,,,,,,-34.79102246530441,-58.41219650378676
+250,293,Alan Moran,Soto Acebal 179  entre Retiro y Combatientes de Malvinas,Burzaco,113190-8094,,,,,,-34.81154368551015,-58.413703674034714
+251,294,Alicia Martin,Juan manuel de rosas 5997,Isidro Casanova,116836-3023,,,,,,-34.69715083324528,-58.57765704539484
+252,295,Fernando,Luis Viale 1052,Caballito,115816-6478,,,,,,-34.60824091689138,-58.4530223588918
+253,296,Tomas Paravic,Ayacucho 890  1ro A,Recoleta Caba,113625-5115,,,,,,-34.59874613892315,-58.3959468742337
+254,297,Tobias,"Fortunato López 813, 9 de abril",Monte Grande,221561-9744,,,,,,-34.75940480123857,-58.42608627422801
+255,298,Pablo,Tucumán 3021  piso 2 departamento 2,Caba,113266-3733,,,,,,-34.60073567371988,-58.407974830056794
+256,299,Favio Delgado,Avellaneda 564,Caba,117147-4466,,,,,,-34.61448743763871,-58.43907458772695
+257,300,Ludmila,Sargento Cabral 1528,Escobar,115176-3687,,,,,,-34.36907513659273,-58.76561840307693
+258,301,Gabriel,Pedro Goyena 323,Caballito,117212-1511,,,,,,-34.62520397236877,-58.43184183190335
+259,302,Leslie,Av perdriel 3886 entre rouco y san martin,San Martin,116279-9705,,,,,,-34.5817338762811,-58.53396406146649
+260,303,Nanci Lugo,retira,caba,1153424070,,,,,,,
+261,304,Guido Bar,Cabrera 3975,caba,1160944150,,,,,,,
+262,305,CHINO,Sarmiento 670,caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,COMBO SIMPLE/COMBO DOBLE,,,,
+263,306,Nicolás Rivarola,Retira,caba,1125588426,,,,,,,
+264,307,CHINO,Tomas liberti 1184,CHINO,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,,,,,
+265,308,EMPLEDA MARIELA,AVENIDA SAN JUAN 1854 KIOSKO LA ESTRELLA,caba,,,,,,,,
+266,309,cristian,Avenida Dardo Rocha 1089 casi esquina Montevideo,Bernal,1154275655,,,,,,-34.713537188995105,-58.30161811821717
+267,310,Leonel,Sarmiento 159,Campana,3487 21-5665,,,,,,-34.15939531563407,-58.96320723173157
+268,311,Kevin,Fray Mamerto Esquiú 5669,Villa Bosch,1131056303,,,,,,,
+269,312,Maxi,Zeballos 8171,san martin,1133638279,,,,,,-34.536212687705536,-58.5917362824294
+270,313,Daiana gonzalez,"Rivadavia 1434 entrw maipu y gavazzi , barrio 9 de julio",Campana,3489336869,,,,,,-34.18365679134678,-58.96117743173074
+271,314,julio particular,retira por deposito,caba,vendedor charly,,,,,,,
+272,315,Mariano Belinky,Gobernador Ugarte 3382,"OLIVOS, VTE. LOPEZ",1166751111,,,,,,-34.52320302803121,-58.50984469999999
+273,316,David Giménez,Melian 1979 parque industrial,Burzaco,1168743480,,,,,,-34.83412442760262,-58.40968258937676
+274,317,ariel barrios,quaglia 183 local 6,Bariloche,2944513211,,,"Se despacha por Transporte IMAZ, Direccion : Pergamino 3830, CABA.",,,,
+275,318,"""Vanesa hernandez",None,None,None,None,,None,,None,,
+276,"""",EMILIO LAMARCA 100,pacheco,1168215814,,,,,,None,,
+277,319,Marcela,Florida 8297 Esquina Portinari,del viso,1157403855,,,,,,,
+278,320,Ignacio Albornoz,"Las Caléndulas 2700 local 2,Manuel Alberti,",pilar,1157203819,,,,,,,
+279,321,cl nueva,retira por local,caba,1134484952,,,,,,,
+280,322,Martin,"Av Maipu 1636,",Vicente Lopez,1130442374,,,,,,,
+281,323,Vanesa,Hipólito Yrigoyen 30600 esquina indio bares,Ale Korn,1159666226,,,,,,,
+282,324,Macarena,"martiniano leguizamon 3002 , villa Lugano",caba,1140580340,,,,,,,
+283,325,Nadia,Ruiz de los llanos n78 3ntre bach y almeira,isidro casanova,1136360096,,,,,,-34.722249496982016,-58.57348466708036
+284,326,Pablo,Guardia nacional 586,Villa luro,1130398319,Vendedora Jessica(5%),,,,,,
+285,327,federico,mitre 1951 y lambare,Crucesitar,11 35673000,,,,,,,
+286,328,Lara Vargas,"Av. Alvarez Thomas 1407, esquina 14 de julio",caba,11 38474519,,,,,,,
+287,329,Nahuel Santacruz   (  El Sazón  local ),retira,caba,1166379962,,,,,,,
+288,330,Patricio local loyola center,loyola 557 entre acevedo y malabia,caba,1122931207,Vendedora Jessica(5%),,,,,,
+289,331,CHINO,Santo Domingo 3995,caba,Vendedor Chino Benitez: 11 53839257,,,,,,,
+290,332,Malena,Linconl 580,wilde,1125883622,,,,,,-34.70109836504959,-58.30825500287482
+291,,Kiosco UVA,Camino Gral Belgrano 6413,Florencio varela,Camila: 11 5011-9590,,,Combo doble(15+3 + 2pa.sal),,,-34.78030821593633,-58.26366964690755
+292,333,richard,almafuerte 275,caba,1160000477,,7.0,,,,,
+293,334,richard,caseros 3710,caba,1160000477,,7.0,,,,,
+294,335,Lorena,"""Hamburgueseria DENIRO Cesar Diaz 1600",None,None,None,,None,,None,,
+295,"Paternal- """,caba,1165348812,,,,,,,None,,
+296,336,Fernando Quiroz,Las flores 1735 entre 834 y 836,hudson,1125800737,,,,,,,
+297,337,Patricia gil,Calle j b justo 4880 esquina panamá,Quilmes oeste,1126945733,,,,,,-34.76591580075908,-58.26915338937943
+298,338,Yesika Piza,rio de Janeiro 1084,caba,1131949828,,,,,,,
+299,339,Marcela,Naon 4523 entre mitre y chacabuco,"san martin, billingurts",1171703692,,,,,,,
+300,340,roxana,Av. Eva Duarte de Perón 1246 entre calle 117 y 119,gernica,1144186019,,,,,,,
+301,341,Alexis campos,Julián Alvarez 1096,Villa Crespo,11 3525-1357,,,,,,,
+302,342,pablo,Av. Eva Duarte de Perón 1246 entre calle 117 y 119,gernica,,,,,,,,
+303,343,karina,retira,caba,,Vendedora Jessica(5%),,,,,,
+304,344,Gustavo Bernardez,Av Bemberg 5089 entre 150 y 151,Hudson,11 6112-0914,,,,,,,
+305,345,Alan Almeyra,prov corrrientes- retira comicionista,caba,2272411025,,,,,,,
+306,346,jessica,catamarca 2263,caba,1158525510,,,,,,,
+307,347,julieta,Ricardo Gutiérrez 1379,Crucesita,11 2723-2841,,,,,,,
+308,348,CHINO,Av Chiclana 3671,caba,Vendedor Chino Benitez: 11 53839257,Vendedor chino (5%),,,,,,
+309,350,andres y celina,"Crisologo Larralde 2501 esq C.de la PAZ,",saavedra,11 3524-2018,,,,,,,
+310,350,Celina y andres,"Crisologo Larralde 2501 esq C.de la PAZ,",saavedra,1135242018,,,,,,,
+311,351,Heraldo,ARAS,Aras,,,,,,,,
+312,352,Juan,retira,caba,,,,,,,,
+313,353,Cintia,"General acha 1998, esquina granja lospollitos",Quilmes oeste,1150593346,,,,,,,
+314,354,Karen,retira,caba,11 3448-4952,,,,,,,
+315,355,Manuel Angel,Avenida Guillermo Hudson 1211,Flo. varela,1160502674,,,,,,,
+316,356,Gisela,San Martin 2380,Flo. varela,1125471881,,,,,,,
+317,357,Nicolás tejido,Sarmiento 21 de Chacabuco bs as 6740,Bs As,2352 54-8542,,,,,,,
+318,358,Nicole ledesma,Capdevila 433,florencio varela,11 3219-1567,,,,,,,
+319,359,Alberto,Riobamba 292,caba,11 6187-7213,,,,,,,
+320,360,chino,Rio cuarto 3036,caba,,Vendedor chino (5%),,,,,,
+321,361,Gisela,eva peron 658,gernica,1167346909,,,,,,,
+322,362,Martina,Sarmiento 654 entre San Juan y Catamarca,gernica,11 3299-7972,,,,,,,
+323,363,Moyano Tamara Ayelen  N° personal : 1553374286,"ruiz de los llanos 363 casa 108 es el local ,  entre settino y Almeira",Isidro casanova,11 3862-6577,,,,,,,
+324,364,cecilia,retira,caba,,Vendedora Jessica(5%),,,,,,
+325,365,Emilce,"eva peron 5845,entre la raya larrazabal,matadero",caba,1168028794,Vendedora Jessica(5%),,,,,,
+326,366,mabel /  Pancheria / Perro Dinamita,"""Avenida Manuel Belgrano 3761",None,None,None,,None,,None,,
+327,"""",sarandi,11 5957-4331,,,,,,,None,,
+328,367,local,carrillo 2395,san martin,11 6893-3391,,,,,,,
+329,368,Cecilia Natalia Torres,Fitz Roy 607 esq. mariscal castilla (7 cuadras del autopista del oeste puente de santa rosa),hurlingham,11 6198-1842,,,,,,,
+330,369,monica,dist intendente campos 1841,san martin,1162692604,,,,,,,
+331,370,Nancy,Instituto Divina Providencia Arias 2915,caba,11 6554-0747,,,,,,,
+332,371,colegio. Contacto Elena,av pedro de mendoza 1777,caba,1131757005,,,,,,,
+333,372,johanna peralta de 8 a 21,"carlos gardel 1468, entre canada y echeverria",moreno,11 2805-7376,,,,,,,
+334,373,"lourdes quiroz, Llamar por cel para coordinar entrega","Barragan 1286, esq gral teniente richieri",ciudadela,11 7140-4443,,,,,,,
+335,374,daniela,rucci 133,guernica,11 5349-3952,,,,,,,
+336,375,Yesica,Monteagudo 2927,Florencio varela,11 6466-0455,,,,,,,
+337,376,Héctor Daniel,De la Ancianidad 2325,Florencio varela,+54 9 11 3027-0391,,,,,,,
+338,377,Christian Hernan,Avenida de los Incas 4018,caba,116255-7137,,,,,,,
+339,378,Nadia Troche.,Finlandia 1452 entre la Haya y berna...pico de.oro,Florencio varela,11 2791-6639,,,,,,,
+340,379,Jorgelina negrete,Coronel pringles 951,ituzaingo,11 4673-4397,,,,,,,
+341,380,Nahuel (asociado al c.148),Av Eva Peron 3624 Cafeteria Florencio Varela,Florencio varela,1131548590,,,,,,,
+342,381,"Matias Miranda, LLAMAR POR CEL, vive a 5 cuadras",J.B.Alberdi 2931,Florencio Varela,+54 9 11 5874-8166,,,,,,,
+343,382,Pablo Pucheta,as Heras 1503 en Villa Maipu.Entre Gral. Savio y Perdriel,san martin,11 6445-2801,,,,,,,
+344,383,"Cecilia ~La Tanita, casa de comida","Gregorio de laferrere 7420,","Mataderos, CABA",+54 9 11 4082-2887,,,,,,,
+345,384,xxxxxx,"Zapiola 763, entre levalle y dardo rocha",bernal,nunca pidio,,,,,,,
+346,385,liliana,Teodoro fels 2030,Longchamps,11-5458-1108,,,,,,,
+347,386,nadia,finlandia 1452 entre la Haya y berna...pico de.oro,varela,1127916639,,,,,,,
+348,387,lucciano,pichincha 312,caba  balvanera,+54 9 223 512-9447,,,,,,,
+349,388,Rosana,punto de encuentro,campana,+54 9 3487 47-9301,,,,,,,
+350,399,Ingrid,Los andes 5329,bernal oeste,+64 27 241 8381,,,,,,,
+351,400,valentina,"Zapiola 763, entre levalle y dardo rocha",bernal,+54 9 11 5826-8450,,,,,,,
+352,401,Oriana Espinoza,ritira por local,CABA,221 559-1909,,,,,,,
+353,402,Franco,"Miguel Faust rocha 379,Esquina Hugo del carril",Burzaco,11 2331-3876,,,,,,,
+354,403,Gabriel,Moreno 690,caballito,11 7212-1511,,,,,,,
+355,404,Gabriel,alberdi 1691,caballito,11 7212-1511,,,,,,,
+356,405,Ariadna,"Coronel millan 3720, entre Potosi y Darragueira",valentin alsina,11 6223-2966,,,,,,,
+357,406,Romina,Av Juan de Garay 2360 timbre 3º A,caba,11 2770-4740,,,,,,,
+358,407,Moreno florencia clotilde,Picún leufú-,neuquen,2942 69-0469,,,,,,,
+359,408,edith,148 NRO 1858    Entre 18A y 19,berazategui,+54 9 11 5805-5361,,,,,,,
+360,409,Isabel entrega de 07 a 14hs,Pedro goyena 389,CABA,11 6801-1262,,5.0,,,,,
+361,410,Guillermo/Edith,Lorenzini 1521 sociedad de fomento J.A.Castelli,Lonchang,11 2172-5033,,,,,,,
+362,411,CHINO,Av.gral Iriarte 3808,caba,,Vendedor chino (5%),,,,,,
+363,412,marcelo,"Jorge Newbery 212 , Luis guillon",monte grande,,,,,,,,
+364,413,Juan Cruz,tucuman 2701,caba,11 5482-0308,,,,,,,
+365,414,Agustina,Juan jose valle 1845,tigre/ talar,11 3044-6628,,,,,,,
+366,415,Jorge,Roger 2077 entre Hipólito Yrigoyen y Barboza,longchamps,11 2611-1093,vendedor charly,,,,,,
+367,417,Omar Fleitas !! LLAMAR 30 minutos antes!!,"""Calle 103 esquina 104  Partido Pte Peron.",None,None,None,,None,,None,,
+368,"Barrio San Pablo""",gernica,11 2576-5463,,,,,,,None,,
+369,418,Daiana,"""Humahuaca 3423",None,None,None,,None,,None,,
+370,"""",caba,115135-0881,Vendedora Jessica(5%),,,,,,None,,
+371,419,Facundo,retira por local,caba,11 6540-1315,,,,,,,
+372,420,Cliente Muestras,,Bs As,,Charly,,,,,,
+373,421,Gabriela,retira por local,caba,11 2472-9941,,,,,,,
+374,422,"Carlos ""! Llamar 20 minutos antes de llegar!",juan domingo peron 2629( al lado del gym) y Túnez,florencio varela,+54 9 3487 20-0288,,,,,,,
+375,423,Fullser bulnes,Bulnes 2011,CABA,+54 9 11 2512-8898,,,,,,,
+376,424,CHINO,pedriel 49,caba,,Vendedor chino (5%),,,,,,
+377,425,Melisa,pedir direccion,Lomas de Zamora,11 5347-1917,,,,,,,
+378,426,Matias,Av.mitre 6185,wilde,11 2160-8023,,,,,,,
+379,427,Marina/Martin,retira por local,caba,11 6957-8576,,,,,,,
+380,428,Susana Lopez,avenida MITRE 903,Berazateggui,11 5017-7514,,,,,,,
+381,429,Fanny Giselle Gonzalez,Av. Lacarra 3042,caba,11 3590-7184,,,,,,,
+382,430,Candela Fischetti,"Talcahuano 633, villa martelli",tecnopolis,11 2405-0654,,,,,,,
+383,431,Pablo perez,Thames 747 1° piso Local TSUKI,caba,11 6895-5430,,,,,,,
+384,432,Micaela Rodrigue,"Martín j haedo 4793 , florida oeste",zona norte,11 3002-0755,,,,,,,
+385,433,BRAVA CAFÉ  Lurdes Cormenzana,"""Boulevard nahuel huapi 2346",None,None,None,,None,,None,,
+386,"""",Villa langostura,,charly,,""" Vía cargo",,None,,None,,
+387,"Cruz del sur""",,,,None,None,,None,,None,,
+388,434,"Mariela, Kioko la estrella",medrano 238,caba,11 2468-0808,,,,,,,
+389,435,Diego,retira por local,caba,,vendedor tony,,,,,,
+390,436,VENDEDOR CARLOS,Directorio 602,caba,,,,,,,,
+391,437,Sanguchex,Gral paz 7447 ( Jose Ingenieros),caba,11 5714-2388,,,,,,,
+392,438,marcelo movistar arena,Av Corrientes 6122 esq dorrego,caba,+54 9 11 4475-0568,,,,,,,
+393,439,juli frente al ANSES,"Cordero 6180, entre Onsari y ascasubi.",wilde,+54 9 11 6808-1612,,,,,,,
+394,440,luciano,calle 143 297,Berazategui,+54 9 11 3855-6259,,,,,,,
+395,441,"natalia "" local COMEME""",Alberdi. 61,quilmes,+54 9 11 3640-7377,,,,,,,
+396,442,Daniel Lopez,Humboldt 17 (09 a 17hs),caba,1133573999,,,,,,-34.597261464298185,-58.45230840566401
+397,443,Yamila,Retira por local,caba,11 7117-9718,,,,,,,
+398,445,Micaela,Gobernador oliden 1768,Valentín alsina,11 7373-4481,,,,,,-34.6847460053664,-58.41207401976094
+399,446,Rodrigo Fernández,Mitre 2899,avellaneda,11 3644-5372,,,,,,-34.67944049911149,-58.34600801105157
+400,447,Rodrigo Fernández,Erezcano 2011 lanus,avellaneda,11 3644-5372,,,,,,-34.68070324531723,-58.405022185659334
+401,448,Oscar  MORFI VIANDAS,Marcelo t de Alvear 628,caba,11 6626-8100,,,,,,,
+402,449,Nicolas,Rawson 583 entre paraguay y filardi villa centenario,Lomas de Zamora,11 7166-5059,,,,,,,
+403,450,PRODUCTOS MUESTRAS,,,,,,,,,,
+404,451,Santiago 1,avenida villamayor 328,,11 3890-8120,,,,,,,
+405,452,Santiago 2,avenida raul Alfonsin 140,,11 3890-8120,,,,,,,
