@@ -1,14 +1,17 @@
 # routers/bot.py
+from __future__ import annotations
+
 from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 import models
 import schemas
 from database import get_db
-from utils.telefonos import normalize_phone
 from services.pedidos_services import create_pedido
+from utils.telefonos import normalize_phone
 
 router = APIRouter(prefix="/bot", tags=["bot"])
 
@@ -26,6 +29,43 @@ def find_cliente_by_phone(db: Session, wa_phone: str) -> models.Cliente | None:
         if normalize_phone(c.telefono) == objetivo:
             return c
     return None
+
+
+@router.get("/productos/buscar")
+def bot_buscar_productos(texto: str, db: Session = Depends(get_db)):
+    """
+    Devuelve hasta 5 productos que matcheen por nombre/presentación/categoría.
+    Lo vamos a usar desde el bot para 'pedido por descripción'.
+    """
+    q = (texto or "").strip()
+    if not q:
+        return []
+
+    like = f"%{q}%"
+
+    productos = (
+        db.query(models.Producto)
+        .filter(
+            or_(
+                models.Producto.nombre.ilike(like),
+                models.Producto.presentacion.ilike(like),
+                models.Producto.categoria.ilike(like),
+            )
+        )
+        .order_by(models.Producto.nombre)
+        .limit(5)
+        .all()
+    )
+
+    return [
+        {
+            "codigo": p.codigo,
+            "nombre": p.nombre,
+            "presentacion": p.presentacion,
+            "precio_centavos": p.precio_centavos,
+        }
+        for p in productos
+    ]
 
 
 @router.post("/pedidos/from-whatsapp", response_model=schemas.BotPedidoResponse)
@@ -96,9 +136,12 @@ def crear_pedido_from_whatsapp(
 
     # Como 'pedido' es un modelo SQLAlchemy, podemos acceder a las relaciones
     for it in pedido.items:
-        # Cargamos el producto relacionado
         producto = it.producto
-        desc_prod = f"{producto.codigo} {producto.nombre}" if producto else f"ID {it.producto_id}"
+        desc_prod = (
+            f"{producto.codigo} {producto.nombre}"
+            if producto
+            else f"ID {it.producto_id}"
+        )
         linea = f"- x{it.cantidad} {desc_prod} = ${it.subtotal_cent/100:.2f}"
         lineas.append(linea)
 
