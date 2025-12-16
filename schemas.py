@@ -8,14 +8,28 @@ from pydantic import BaseModel
 # =========================
 # CLIENTES
 # =========================
-class ClienteRead(BaseModel):
-    id: int
+
+class ClienteBase(BaseModel):
     numero_cliente: Optional[int] = None
     nombre: str
     direccion: Optional[str] = None
     barrio: Optional[str] = None
     telefono: Optional[str] = None
+    vendedor: Optional[str] = None
     descuento_porcentaje: Optional[float] = None
+    comentario: Optional[str] = None
+    coordenadas: Optional[str] = None
+    entrega_info: Optional[str] = None
+
+
+class ClienteCreate(ClienteBase):
+    """Datos de entrada para crear un cliente."""
+    pass
+
+
+class ClienteRead(ClienteBase):
+    id: int
+    deuda_centavos: int
 
     class Config:
         from_attributes = True  # Pydantic v2 (equivalente a orm_mode=True)

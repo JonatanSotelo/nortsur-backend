@@ -13,6 +13,35 @@ from utils.telefonos import normalize_phone
 
 router = APIRouter(prefix="/clientes", tags=["clientes"])
 
+@router.post("/", response_model=schemas.ClienteRead)
+def crear_cliente(
+    cliente_in: schemas.ClienteCreate,
+    db: Session = Depends(get_db),
+):
+    """
+    Crea un cliente nuevo.
+    Este endpoint lo vamos a usar desde Swagger (y después desde la web/BOT si queremos).
+    """
+    cliente = models.Cliente(
+        numero_cliente=cliente_in.numero_cliente,
+        nombre=cliente_in.nombre,
+        direccion=cliente_in.direccion,
+        barrio=cliente_in.barrio,
+        telefono=cliente_in.telefono,
+        vendedor=cliente_in.vendedor,
+        descuento_porcentaje=cliente_in.descuento_porcentaje,
+        comentario=cliente_in.comentario,
+        coordenadas=cliente_in.coordenadas,
+        entrega_info=cliente_in.entrega_info,
+        # deuda_centavos lo dejamos con el default=0 del modelo
+    )
+
+    db.add(cliente)
+    db.commit()
+    db.refresh(cliente)
+    return cliente
+
+
 
 @router.get("/", response_model=List[schemas.ClienteRead])
 def listar_clientes(
