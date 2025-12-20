@@ -4,7 +4,7 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from sqlalchemy import or_
+from sqlalchemy import or_, func
 
 import models
 import schemas
@@ -12,35 +12,6 @@ from database import get_db
 from utils.telefonos import normalize_phone
 
 router = APIRouter(prefix="/clientes", tags=["clientes"])
-
-@router.post("/", response_model=schemas.ClienteRead)
-def crear_cliente(
-    cliente_in: schemas.ClienteCreate,
-    db: Session = Depends(get_db),
-):
-    """
-    Crea un cliente nuevo.
-    Este endpoint lo vamos a usar desde Swagger (y después desde la web/BOT si queremos).
-    """
-    cliente = models.Cliente(
-        numero_cliente=cliente_in.numero_cliente,
-        nombre=cliente_in.nombre,
-        direccion=cliente_in.direccion,
-        barrio=cliente_in.barrio,
-        telefono=cliente_in.telefono,
-        vendedor=cliente_in.vendedor,
-        descuento_porcentaje=cliente_in.descuento_porcentaje,
-        comentario=cliente_in.comentario,
-        coordenadas=cliente_in.coordenadas,
-        entrega_info=cliente_in.entrega_info,
-        # deuda_centavos lo dejamos con el default=0 del modelo
-    )
-
-    db.add(cliente)
-    db.commit()
-    db.refresh(cliente)
-    return cliente
-
 
 
 @router.get("/", response_model=List[schemas.ClienteRead])
@@ -72,6 +43,60 @@ def listar_clientes(
     return clientes
 
 
+@router.post("/", response_model=schemas.ClienteRead)
+def crear_cliente(
+    cliente_in: schemas.ClienteCreate,
+    db: Session = Depends(get_db),
+):
+    """
+    Crea un nuevo cliente.
+    - Normaliza el teléfono con normalize_phone.
+    - Evita duplicar clientes con el mismo teléfono.
+    - Si existe la columna numero_cliente, le asigna el siguiente número.
+    """
+    if not cliente_in.telefono:
+        raise HTTPException(
+            status_code=400,
+            detail="El teléfono es obligatorio para crear un cliente que use el bot.",
+        )
+
+    telefono_normalizado = normalize_phone(cliente_in.telefono)
+
+    # ¿Ya existe un cliente con ese teléfono?
+    existente = (
+        db.query(models.Cliente)
+        .filter(models.Cliente.telefono == telefono_normalizado)
+        .first()
+    )
+    if existente:
+        raise HTTPException(
+            status_code=400,
+            detail="Ya existe un cliente con ese teléfono.",
+        )
+
+    # Calcular siguiente numero_cliente si la columna existe
+    nuevo_numero = None
+    if hasattr(models.Cliente, "numero_cliente"):
+        max_num = db.query(func.max(models.Cliente.numero_cliente)).scalar()
+        nuevo_numero = (max_num or 0) + 1
+
+    cliente = models.Cliente(
+        nombre=cliente_in.nombre,
+        direccion=cliente_in.direccion,
+        barrio=cliente_in.barrio,
+        telefono=telefono_normalizado,
+        descuento_porcentaje=cliente_in.descuento_porcentaje,
+    )
+
+    if nuevo_numero is not None:
+        cliente.numero_cliente = nuevo_numero
+
+    db.add(cliente)
+    db.commit()
+    db.refresh(cliente)
+    return cliente
+
+
 @router.get("/{cliente_id}", response_model=schemas.ClienteRead)
 def obtener_cliente(cliente_id: int, db: Session = Depends(get_db)):
     cliente = (
@@ -89,7 +114,7 @@ def obtener_cliente_por_telefono(telefono: str, db: Session = Depends(get_db)):
     """
     Busca el cliente por teléfono usando normalización:
     - quita espacios, +, -, etc.
-    - compara por los últimos 10 dígitos.
+    - compara por los últimos 10 dígitos (según normalize_phone).
     Esto hace match aunque WhatsApp traiga +54911... y en la planilla esté 11-XXXX-XXXX.
     """
     objetivo = normalize_phone(telefono)

@@ -1,4 +1,3 @@
-# schemas.py
 from datetime import datetime
 from typing import List, Optional
 
@@ -8,28 +7,33 @@ from pydantic import BaseModel
 # =========================
 # CLIENTES
 # =========================
-
 class ClienteBase(BaseModel):
+    """
+    Datos base de cliente para crear/editar.
+    """
+    nombre: str
+    direccion: Optional[str] = None
+    barrio: Optional[str] = None
+    telefono: Optional[str] = None
+    descuento_porcentaje: Optional[float] = None
+
+
+class ClienteCreate(ClienteBase):
+    """
+    Datos para crear un nuevo cliente desde Swagger o futuras UIs.
+    Por ahora usamos los mismos campos que ClienteBase.
+    """
+    pass
+
+
+class ClienteRead(BaseModel):
+    id: int
     numero_cliente: Optional[int] = None
     nombre: str
     direccion: Optional[str] = None
     barrio: Optional[str] = None
     telefono: Optional[str] = None
-    vendedor: Optional[str] = None
     descuento_porcentaje: Optional[float] = None
-    comentario: Optional[str] = None
-    coordenadas: Optional[str] = None
-    entrega_info: Optional[str] = None
-
-
-class ClienteCreate(ClienteBase):
-    """Datos de entrada para crear un cliente."""
-    pass
-
-
-class ClienteRead(ClienteBase):
-    id: int
-    deuda_centavos: int
 
     class Config:
         from_attributes = True  # Pydantic v2 (equivalente a orm_mode=True)
@@ -93,7 +97,6 @@ class PedidoRead(BaseModel):
 
     class Config:
         from_attributes = True
-
 
 
 # =========================
