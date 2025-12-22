@@ -1,6 +1,6 @@
 from datetime import datetime
-from typing import List, Optional
-
+from typing import List, Optional, Literal
+from enum import Enum
 from pydantic import BaseModel
 
 
@@ -38,6 +38,20 @@ class ClienteRead(BaseModel):
     class Config:
         from_attributes = True  # Pydantic v2 (equivalente a orm_mode=True)
 
+class ClienteUpdate(BaseModel):
+    numero_cliente: Optional[int] = None
+    nombre: Optional[str] = None
+    direccion: Optional[str] = None
+    barrio: Optional[str] = None
+    telefono: Optional[str] = None
+    vendedor: Optional[str] = None
+    descuento_porcentaje: Optional[float] = None
+    comentario: Optional[str] = None
+    coordenadas: Optional[str] = None
+    entrega_info: Optional[str] = None
+    activo: Optional[bool] = None  # opcional (si querés permitir reactivar)
+
+
 
 # =========================
 # PRODUCTOS
@@ -52,6 +66,17 @@ class ProductoRead(BaseModel):
 
     class Config:
         from_attributes = True
+
+class ProductoUpdate(BaseModel):
+    nombre: Optional[str] = None
+    precio_centavos: Optional[int] = None
+    activo: Optional[bool] = None  
+    
+    # opcional, por si querés activar/desactivar también por PATCH
+    # opcionales si existen en tu modelo:
+    # descripcion: Optional[str] = None
+    # codigo: Optional[str] = None
+    # sku: Optional[str] = None
 
 
 # =========================
@@ -98,6 +123,21 @@ class PedidoRead(BaseModel):
     class Config:
         from_attributes = True
 
+# Estados permitidos (mantenelo simple)
+class PedidoEstado(str, Enum):
+    NUEVO = "NUEVO"
+    CONFIRMADO = "CONFIRMADO"
+    ENTREGADO = "ENTREGADO"
+    CANCELADO = "CANCELADO"
+
+class PedidoEstadoUpdate(BaseModel):
+    estado: PedidoEstado
+
+class PedidoUpdate(BaseModel):
+    observaciones: Optional[str] = None
+
+class PedidoCancelar(BaseModel):
+    motivo: Optional[str] = None
 
 # =========================
 # INTEGRACIÓN BOT WHATSAPP

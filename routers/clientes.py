@@ -1,8 +1,6 @@
 # routers/clientes.py
 
-from typing import List, Optional
-
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, func
 
@@ -14,33 +12,26 @@ from utils.telefonos import normalize_phone
 router = APIRouter(prefix="/clientes", tags=["clientes"])
 
 
-@router.get("/", response_model=List[schemas.ClienteRead])
+@router.get("/", response_model=list[schemas.ClienteRead])
 def listar_clientes(
-    q: Optional[str] = None,
-    limit: int = 100,
-    offset: int = 0,
+    q: str | None = Query(default=None, description="Buscar por nombre o teléfono"),
+    limit: int = Query(default=50, ge=1, le=200),
+    offset: int = Query(default=0, ge=0),
     db: Session = Depends(get_db),
 ):
     query = db.query(models.Cliente)
 
     if q:
-        like = f"%{q}%"
+        q2 = q.strip()
+        like = f"%{q2}%"
         query = query.filter(
             or_(
                 models.Cliente.nombre.ilike(like),
-                models.Cliente.direccion.ilike(like),
-                models.Cliente.barrio.ilike(like),
                 models.Cliente.telefono.ilike(like),
             )
         )
 
-    clientes = (
-        query.order_by(models.Cliente.nombre)
-        .offset(offset)
-        .limit(limit)
-        .all()
-    )
-    return clientes
+    return query.order_by(models.Cliente.id.desc()).offset(offset).limit(limit).all()
 
 
 @router.post("/", response_model=schemas.ClienteRead)
@@ -62,17 +53,13 @@ def crear_cliente(
 
     telefono_normalizado = normalize_phone(cliente_in.telefono)
 
-    # ¿Ya existe un cliente con ese teléfono?
     existente = (
         db.query(models.Cliente)
         .filter(models.Cliente.telefono == telefono_normalizado)
         .first()
     )
     if existente:
-        raise HTTPException(
-            status_code=400,
-            detail="Ya existe un cliente con ese teléfono.",
-        )
+        raise HTTPException(status_code=400, detail="Ya existe un cliente con ese teléfono.")
 
     # Calcular siguiente numero_cliente si la columna existe
     nuevo_numero = None
@@ -86,6 +73,7 @@ def crear_cliente(
         barrio=cliente_in.barrio,
         telefono=telefono_normalizado,
         descuento_porcentaje=cliente_in.descuento_porcentaje,
+        # si tu schema trae más campos, acá los sumamos (vendedor, comentario, etc.)
     )
 
     if nuevo_numero is not None:
@@ -97,25 +85,12 @@ def crear_cliente(
     return cliente
 
 
-@router.get("/{cliente_id}", response_model=schemas.ClienteRead)
-def obtener_cliente(cliente_id: int, db: Session = Depends(get_db)):
-    cliente = (
-        db.query(models.Cliente)
-        .filter(models.Cliente.id == cliente_id)
-        .first()
-    )
-    if not cliente:
-        raise HTTPException(status_code=404, detail="Cliente no encontrado")
-    return cliente
-
-
 @router.get("/by-phone/{telefono}", response_model=schemas.ClienteRead)
 def obtener_cliente_por_telefono(telefono: str, db: Session = Depends(get_db)):
     """
     Busca el cliente por teléfono usando normalización:
     - quita espacios, +, -, etc.
     - compara por los últimos 10 dígitos (según normalize_phone).
-    Esto hace match aunque WhatsApp traiga +54911... y en la planilla esté 11-XXXX-XXXX.
     """
     objetivo = normalize_phone(telefono)
 
@@ -126,7 +101,73 @@ def obtener_cliente_por_telefono(telefono: str, db: Session = Depends(get_db)):
         if normalize_phone(c.telefono) == objetivo:
             return c
 
-    raise HTTPException(
-        status_code=404,
-        detail="Cliente no encontrado para ese teléfono",
-    )
+    raise HTTPException(status_code=404, detail="Cliente no encontrado para ese teléfono")
+
+
+@router.get("/{cliente_id}", response_model=schemas.ClienteRead)
+def obtener_cliente(cliente_id: int, db: Session = Depends(get_db)):
+    cliente = db.query(models.Cliente).filter(models.Cliente.id == cliente_id).first()
+    if not cliente:
+        raise HTTPException(status_code=404, detail="Cliente no encontrado")
+    return cliente
+
+
+@router.patch("/{cliente_id}", response_model=schemas.ClienteRead)
+def editar_cliente(
+    cliente_id: int,
+    payload: schemas.ClienteUpdate,
+    db: Session = Depends(get_db),
+):
+    cliente = db.query(models.Cliente).filter(models.Cliente.id == cliente_id).first()
+    if not cliente:
+        raise HTTPException(status_code=404, detail="Cliente no encontrado")
+
+    # Pydantic v2
+    data = payload.model_dump(exclude_unset=True)
+
+    # Validación mínima: si mandan nombre, que no sea vacío
+    if "nombre" in data and (data["nombre"] is None or str(data["nombre"]).strip() == ""):
+        raise HTTPException(status_code=422, detail="El nombre no puede estar vacío")
+
+    for k, v in data.items():
+        setattr(cliente, k, v)
+
+    db.add(cliente)
+    db.commit()
+    db.refresh(cliente)
+    return cliente
+
+
+@router.patch("/{cliente_id}/activar")
+def activar_cliente(
+    cliente_id: int,
+    db: Session = Depends(get_db),
+):
+    cliente = db.query(models.Cliente).filter(models.Cliente.id == cliente_id).first()
+    if not cliente:
+        raise HTTPException(status_code=404, detail="Cliente no encontrado")
+
+    cliente.activo = True
+    db.add(cliente)
+    db.commit()
+    db.refresh(cliente)
+
+    return {"ok": True, "cliente_id": cliente_id, "activo": bool(cliente.activo)}
+
+
+@router.patch("/{cliente_id}/desactivar")
+def desactivar_cliente(
+    cliente_id: int,
+    db: Session = Depends(get_db),
+):
+    cliente = db.query(models.Cliente).filter(models.Cliente.id == cliente_id).first()
+    if not cliente:
+        raise HTTPException(status_code=404, detail="Cliente no encontrado")
+
+    cliente.activo = False
+    db.add(cliente)
+    db.commit()
+    db.refresh(cliente)
+
+    return {"ok": True, "cliente_id": cliente_id, "activo": bool(cliente.activo)}
+

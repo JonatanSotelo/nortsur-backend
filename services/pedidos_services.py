@@ -16,6 +16,12 @@ def create_pedido(db: Session, pedido_in: schemas.PedidoCreate) -> models.Pedido
     if not cliente:
         raise HTTPException(status_code=404, detail="Cliente no encontrado")
 
+    if not cliente.activo:
+        raise HTTPException(
+            status_code=409,
+            detail=f"El cliente '{cliente.nombre}' está inactivo y no puede crear pedidos",
+        )
+
     total_bruto = 0
     items_models: list[models.PedidoItem] = []
 
@@ -25,10 +31,19 @@ def create_pedido(db: Session, pedido_in: schemas.PedidoCreate) -> models.Pedido
             .filter(models.Producto.id == item_in.producto_id)
             .first()
         )
+
+        # 1) Producto no existe
         if not producto:
             raise HTTPException(
                 status_code=404,
                 detail=f"Producto id={item_in.producto_id} no encontrado",
+            )
+
+        # 2) Producto inactivo
+        if not producto.activo:
+            raise HTTPException(
+                status_code=409,
+                detail=f"El producto '{producto.nombre}' está inactivo y no puede agregarse al pedido",
             )
 
         precio_unitario = producto.precio_centavos
@@ -51,7 +66,7 @@ def create_pedido(db: Session, pedido_in: schemas.PedidoCreate) -> models.Pedido
     pedido = models.Pedido(
         cliente_id=cliente.id,
         canal=pedido_in.canal,
-        estado="pendiente",
+        estado="NUEVO",
         total_bruto_cent=total_bruto,
         descuento_cliente=descuento_porcentaje or None,
         total_descuento_cent=total_descuento,
@@ -65,3 +80,4 @@ def create_pedido(db: Session, pedido_in: schemas.PedidoCreate) -> models.Pedido
     db.refresh(pedido)
 
     return pedido
+

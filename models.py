@@ -1,7 +1,7 @@
 from datetime import datetime
 from sqlalchemy import (
     Column, Integer, String, DateTime, ForeignKey,
-    BigInteger, Numeric, Text
+    BigInteger, Numeric, Text, CheckConstraint, Boolean
 )
 from sqlalchemy.orm import relationship
 
@@ -24,6 +24,7 @@ class Cliente(Base):
     deuda_centavos = Column(BigInteger, default=0, nullable=False)
     entrega_info = Column(Text, nullable=True)
     creado_en = Column(DateTime, default=datetime.utcnow)
+    activo = Column(Boolean, default=True, nullable=False)
     actualizado_en = Column(
         DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
     )
@@ -41,6 +42,7 @@ class Producto(Base):
     presentacion = Column(String, nullable=True)
     precio_centavos = Column(BigInteger, nullable=False)
     creado_en = Column(DateTime, default=datetime.utcnow)
+    activo = Column(Boolean, default=True, nullable=False)
     actualizado_en = Column(
         DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
     )
@@ -73,6 +75,12 @@ class Pedido(Base):
     cliente = relationship("Cliente", back_populates="pedidos")
     items = relationship("PedidoItem", back_populates="pedido", cascade="all, delete-orphan")
 
+    __table_args__ = (
+        CheckConstraint(
+            "estado IN ('NUEVO','CONFIRMADO','ENTREGADO','CANCELADO')",
+            name="ck_pedidos_estado",
+        ),
+    )
 
 class PedidoItem(Base):
     __tablename__ = "pedido_items"
